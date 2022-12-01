@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0 .004em;
+    color: #53433e;
+}
+
+html,body{
+    background-color: #beb19e;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #beb19e;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.navbar-item{
+    padding: 2em;
+}
+.menu-toggle{
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.hamburger{
+    position: relative;
+    top: -46px;
+    width: 40px;
+    height: 20px;
+}
+
+.hamburger b{
+    display: block;
+    position: relative;
+    height: 0.1em;
+    width: 40px;
+    background: #53433e;
+}
+.hamburger b:first-child{
+    top: 40px;
+}
+
+.hamburger b:nth-child(2){
+    top: 50px;
+    width: 41px;
+}
+.hamburger b:nth-child(3){
+    top: 60px;
+}
+
+.site-logo{
+    font-family: "Grifinite L";
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.menu-cart{
+    font-weight: 400;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.product-apper{
+    display: flex;
+    height: 100%;
+    background: #beb19e;
+}
+
+.product-img{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 3;
+    height: 100%;
+}
+img{
+    position: relative;
+    width: 70%;
+}
+.product-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+.product-description{
+    padding: 3em;
+}
+
+.product-title{
+    font-size: 4em;
+    line-height: 0.8em;
+}
+.product-grice{
+    font-family: "Grifinite L";
+    font-size: 4em;
+    margin-top: 0.3em;
+}
+
+.product-color{
+    font-family: Malvetica;
+    font-weight: 400;
+    padding: 1.2em 0;
+}
+.product-size{
+    margin-top: 1.4em;
+}
+label{
+    display: inline-block;
+    position: relative;
+}
+label input{
+    display: none;
+}
+label span{
+    border: 1px solid rgba(101, 82, 79, 0.2);
+    font-family: Malvetica;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 1.2em 0.6em;
+    line-height: 1;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+
+input:checked + span{
+    border-color: #53433e;
+}
+.product-add-to-cart{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-family: Melvatica;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+} 
